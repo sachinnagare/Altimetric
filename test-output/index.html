@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>testng1.xml</span>
+                    <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -112,6 +112,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.PostmanEchoPutTest" class="method navigator-link" hash-for-method="putValidationTest">putValidationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcases.PostmanEchoGetTest" class="method navigator-link" hash-for-method="validateNotMatchingContent(./src/test/resources/TestData.xlsx, FirstSheet)">validateNotMatchingContent(./src/test/resources/TestData.xlsx, FirstSheet)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -127,6 +132,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.PostmanEchoPutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="putValidationTest">
+                  </a> <!-- putValidationTest -->
+                  <span class="method-name">putValidationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -169,7 +189,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/sachinnagare/eclipse-workspace/AltimetricProj/testng1.xml</span>
+            <span class="header-content">/Users/sachinnagare/eclipse-workspace/AltimetricProj/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -182,6 +202,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;testcases.PostmanEchoGetTest&quot;/&gt;
       &lt;class name=&quot;testcases.PostmanEchoPostTest&quot;/&gt;
+      &lt;class name=&quot;testcases.PostmanEchoPutTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -195,7 +216,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -221,24 +242,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validateNotMatchingContent')
 data.setCell(0, 2, 'testcases.PostmanEchoGetTest')
-data.setCell(0, 3, 6441);
+data.setCell(0, 3, 4201);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'getResponseBodyValidate')
 data.setCell(1, 2, 'testcases.PostmanEchoGetTest')
-data.setCell(1, 3, 5285);
+data.setCell(1, 3, 3748);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'postValidationTest')
 data.setCell(2, 2, 'testcases.PostmanEchoPostTest')
-data.setCell(2, 3, 1439);
+data.setCell(2, 3, 1325);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'putValidationTest')
+data.setCell(3, 2, 'testcases.PostmanEchoPutTest')
+data.setCell(3, 3, 1276);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -271,14 +296,21 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateNotMatchingContent(./src/test/resources/TestData.xlsx, FirstSheet)</span>
-                <span class="method-start">5287 ms</span>
+                <span class="method-start">3750 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.PostmanEchoPostTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">postValidationTest</span>
-                <span class="method-start">11729 ms</span>
+                <span class="method-start">7953 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.PostmanEchoPutTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">putValidationTest</span>
+                <span class="method-start">9279 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

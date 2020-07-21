@@ -10,7 +10,7 @@
       
       <class name="testcases.PostmanEchoGetTest"/>
       <class name="testcases.PostmanEchoPostTest"/>
-      
+       <class name="testcases.PostmanEchoPutTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
