@@ -3,18 +3,14 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   
-  
- 
-  <parameter name="excelPath" value="./src/test/resources/TestData.xlsx"></parameter>
+    <parameter name="excelPath" value="./src/test/resources/TestData.xlsx"></parameter>
   <parameter name="sheetName" value="FirstSheet"></parameter>
   
-  
-  
     <classes>
+      
       <class name="testcases.PostmanEchoGetTest"/>
+      <class name="testcases.PostmanEchoPostTest"/>
+      
     </classes>
-  
-  
-  
   </test> <!-- Test -->
 </suite> <!-- Suite -->
