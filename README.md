@@ -8,7 +8,8 @@ Created Data Driven Framework for this Module with Below details :
 2. Language Used - Java.
 3. approch - data driven.
 4. Maven - Dependency Management.
-5. Testng - Controlling test execution. 
+5. Testng - Controlling test execution.
+6. Library - used RestAssured library to Automate the test cases.
 
 Need to work on more specific flow. Will work on it based on time constraints.
 
